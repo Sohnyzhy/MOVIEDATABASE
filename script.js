@@ -7,7 +7,7 @@ const main = document.getElementById("main");
 getMovies(API_URL);
 
 
-
+// hämtar filmerna
 function getMovies(url) {
   fetch(url).then(response => response.json()).then((data) => {
       console.log(data.results);
@@ -15,7 +15,7 @@ function getMovies(url) {
     });
 }
 
-
+//visar filmerna
 function showMovies(data) {
  
 
